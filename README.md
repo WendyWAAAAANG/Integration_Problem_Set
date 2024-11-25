@@ -28,7 +28,7 @@ The dataset consists of integration problems in JSON format, including:
 - **Solutions**: The correct answer and step-by-step solution.
 - **Metadata**: Problem type, difficulty level, and solution approach.
 
-** Example Entry:**
+**Example Entry:**
 ```bash
   [
       {
