@@ -3,7 +3,7 @@
 ### Date: Nov.26.2024
 
 ## Repository
-The data collection scripts and this dataset are publicly available at: ![Roxanne-WANG/Integration_Problem_Set](https://huggingface.co/datasets/Roxanne-WANG/Integration_Problem_Set)
+The data collection scripts and this dataset are publicly available at [Roxanne-WANG/Integration_Problem_Set](https://huggingface.co/datasets/Roxanne-WANG/Integration_Problem_Set)
 
 ## Executive Summary
 This project aims to create a dataset specifically designed for the automatic generation of integration problems. It will serve as the basis for training LLMs to generate integration problems. The problems will be labeled by difficulty and category, making it easy for users to select problems.
@@ -57,7 +57,7 @@ According to the power curve, the required sample size is **64**. This demonstra
 
 ## Data Collection Protocol
 1. Textbooks: Stewart’s Calculus, Apostol’s Calculus
-2. Web Scraping from Open-Source Online Platform:![Symbolab](https://www.symbolab.com/), ![Paul’s Online Math](https://tutorial.math.lamar.edu/)
+2. Web Scraping from Open-Source Online Platform:[Symbolab](https://www.symbolab.com/), [Paul’s Online Math](https://tutorial.math.lamar.edu/)
 
 ## Explory Data Analysis
 **1. Category Distribution**
@@ -104,7 +104,7 @@ This dataset aims to provide high-quality, diverse, and accurate integration pro
    - The problems are collected exclusively from publicly available resources, such as free online educational platforms, open-access textbooks, and reliable mathematics tools like Symbolab, Paul's Online Math Notes, and Wolfram Alpha.
 
 2. **No Proprietary Content**:
-   - The dataset does not include proprietary, copyrighted, or restricted materials. All content is sourced in compliance with terms of service of the platforms used for collection.
+   - The dataset does not include proprietary, copyrighted, or restricted materials. All content is sourced in compliance with the terms of service of the platforms used for collection.
 
 3. **Transparent Collection**:
    - The methods and tools for data collection (e.g., web scraping scripts) are openly documented and included in the project repository, ensuring reproducibility and transparency.
