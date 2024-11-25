@@ -2,18 +2,18 @@
 ### Author: Ruoxin Wang
 ### Date: Nov.26.2024
 
-### Overview
+## Overview
 This project aims to create a dataset specifically designed for the automatic generation of integration problems. It will serve as the basis for training LLMs to generate integration problems. The problems will be labeled by difficulty and category, making it easy for users to select problems.
 
-### Motivation
+## Motivation
 Generating diverse and enough integration problems for practice or exams can be time-consuming. We provide this dataset for fine-tuning LLMs and ask LLMs to generate integration problems. Compared to letting LLMs generate problems directly, a dataset built with symbolic computation and verified mathematical problems ensures higher accuracy and strict adherence to mathematical rules than GPT-generated questions. Secondly, this dataset offers diverse problem types and controlled difficulty levels, something GPT might struggle with in maintaining consistency. Automating the generation of integration problems can provide students with endless opportunities for practice and help them get a deeper conceptual understanding. And teachers can benefit from automated systems that reduce the workload of creating custom problem sets. This system could also be valuable in building AI educational technology platforms.
 
-### What Has Been Done Before / Existing Datasets?
+## What Has Been Done Before / Existing Datasets?
 1. ![Google-DeepMind Mathematics Dataset](https://github.com/google-deepmind/mathematics_dataset): Provides a variety of mathematical problems, including algebra and calculus, but does not focus specifically on integration problems.
 2. ![Khan Academy](https://www.khanacademy.org/math/calculus-1): Popular online learning platform offering integration practice problems, but these problems are not structured as datasets suitable for machine learning tasks.
 3. ![Symbolab](https://www.symbolab.com/), ![Paul’s Online Math](https://tutorial.math.lamar.edu/) and ![Wolfram Alpha](https://www.wolframalpha.com/): Widely used online calculators capable of solving integration problems, but they are not designed for large-scale dataset generation.
 
-### Data Type
+## Data Type
 The dataset in JSON format, consists of a wide variety of integration problems, difficulty level, and category. Below is an example demonstrating how data will be stored:
 ```bash
   [
@@ -30,22 +30,22 @@ The dataset in JSON format, consists of a wide variety of integration problems, 
   ]
 ```
 
-### Uniqueness About This Dataset
+## Uniqueness About This Dataset
 Nowadays, there is no large-scale dataset available in the public domain explicitly focusing on integration problems, although the collection of integration problems in a systematic manner can be an effective way to meet the requirement of problem generation. Current datasets are insufficient for teaching advanced calculus problem generation and do not contain detailed step-by-step problems which is an important component of learning.
 1. Comprehensive Coverage of Integration Techniques: The dataset will incorporate all forms of integration issues with basic, intermediate, and advanced integration issues covered. It includes basic integration, substitution, integration by parts, etc Integration by parts computes the integral with the help of integration of other functions.
 2. Diversity of Functions: The dataset will include integrals of various classes of functions which in fact will include polynomial, trigonometric, logarithmic, exponential, and hyperbolic functions.
 
-### Power Analysis
+## Power Analysis
 
 
-### Data Collection Protocol
+## Data Collection Protocol
 1. Textbooks: Stewart’s Calculus, Apostol’s Calculus
 2. Web Scraping from Open-Source Online Platform:![Symbolab](https://www.symbolab.com/), ![Paul’s Online Math](https://tutorial.math.lamar.edu/)
 
-### Open Source Dataset
+## Open Source Dataset
 The open-source dataset can be found at: ![Roxanne-WANG/Integration_Problem_Set](https://huggingface.co/datasets/Roxanne-WANG/Integration_Problem_Set)
 
-### Explory Data Analysis
+## Explory Data Analysis
 **1. Category Distribution**
 ![Figure_1](https://github.com/user-attachments/assets/89ded859-a8aa-410a-9ed7-8e3c398f4f04)
   - The most frequent category is "Trigonometric Substitution", followed by "Constant Rule", and "Multiple Integrals".
@@ -74,7 +74,7 @@ The open-source dataset can be found at: ![Roxanne-WANG/Integration_Problem_Set]
   - Patterns like tan, ln, and higher powers suggest questions often involve transcendental functions or logarithmic integrations.
   - Graph Summary: A word cloud visualizes the most frequently occurring terms, emphasizing the focus on fundamental and advanced mathematical symbols.
 
-### License
+## License
 This dataset is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 
