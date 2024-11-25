@@ -46,13 +46,14 @@ The dataset consists of integration problems in JSON format, including:
 
 ## Power Analysis
 ![power_analysis](https://github.com/user-attachments/assets/c9555818-49f8-4766-925f-719c28c6f54a)
+<img width="1154" alt="Screenshot 2024-11-25 at 00 37 09" src="https://github.com/user-attachments/assets/7585bda3-81ba-48ce-bba1-8f09c68ef0f6">
 **Assume that:**
 - **Alpha**: 0.05 (Significance Level)
 - **Effect Size**: 0.5 (Moderate Effect)
 - **Power**: 0.8 (80% Probability of Correctly Rejecting the Null Hypothesis)
 
 **Conclusion:**
-According to the power curve, the required sample size is **48**. This demonstrates that moderate effects are easier to detect with fewer samples, making this scenario practical for most dataset collection projects. 
+According to the power curve, the required sample size is **64**. This demonstrates that moderate effects are easier to detect with fewer samples, making this scenario practical for most dataset collection projects. 
 
 ## Data Collection Protocol
 1. Textbooks: Stewart’s Calculus, Apostol’s Calculus
