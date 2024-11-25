@@ -2,19 +2,33 @@
 ### Author: Ruoxin Wang
 ### Date: Nov.26.2024
 
-## Overview
+## Repository
+The data collection scripts and this dataset are publicly available at: ![Roxanne-WANG/Integration_Problem_Set](https://huggingface.co/datasets/Roxanne-WANG/Integration_Problem_Set)
+
+## Executive Summary
 This project aims to create a dataset specifically designed for the automatic generation of integration problems. It will serve as the basis for training LLMs to generate integration problems. The problems will be labeled by difficulty and category, making it easy for users to select problems.
 
-## Motivation
+#### Motivation
 Generating diverse and enough integration problems for practice or exams can be time-consuming. We provide this dataset for fine-tuning LLMs and ask LLMs to generate integration problems. Compared to letting LLMs generate problems directly, a dataset built with symbolic computation and verified mathematical problems ensures higher accuracy and strict adherence to mathematical rules than GPT-generated questions. Secondly, this dataset offers diverse problem types and controlled difficulty levels, something GPT might struggle with in maintaining consistency. Automating the generation of integration problems can provide students with endless opportunities for practice and help them get a deeper conceptual understanding. And teachers can benefit from automated systems that reduce the workload of creating custom problem sets. This system could also be valuable in building AI educational technology platforms.
 
-## What Has Been Done Before / Existing Datasets?
-1. ![Google-DeepMind Mathematics Dataset](https://github.com/google-deepmind/mathematics_dataset): Provides a variety of mathematical problems, including algebra and calculus, but does not focus specifically on integration problems.
-2. ![Khan Academy](https://www.khanacademy.org/math/calculus-1): Popular online learning platform offering integration practice problems, but these problems are not structured as datasets suitable for machine learning tasks.
-3. ![Symbolab](https://www.symbolab.com/), ![Paul’s Online Math](https://tutorial.math.lamar.edu/) and ![Wolfram Alpha](https://www.wolframalpha.com/): Widely used online calculators capable of solving integration problems, but they are not designed for large-scale dataset generation.
+#### Potential applications
+- Training LLMs for mathematics education.
+- Building educational apps that recommend problems tailored to user needs.
+- Developing interactive tutoring systems with step-by-step explanations.
 
-## Data Type
-The dataset in JSON format, consists of a wide variety of integration problems, difficulty level, and category. Below is an example demonstrating how data will be stored:
+#### Uniqueness About This Dataset
+Nowadays, there is no large-scale dataset available in the public domain explicitly focusing on integration problems, although the collection of integration problems in a systematic manner can be an effective way to meet the requirement of problem generation. Current datasets are insufficient for teaching advanced calculus problem generation and do not contain detailed step-by-step problems which is an important component of learning.
+1. Comprehensive Coverage of Integration Techniques: The dataset will incorporate all forms of integration issues with basic, intermediate, and advanced integration issues covered. It includes basic integration, substitution, integration by parts, etc Integration by parts computes the integral with the help of integration of other functions.
+2. Diversity of Functions: The dataset will include integrals of various classes of functions which in fact will include polynomial, trigonometric, logarithmic, exponential, and hyperbolic functions.
+
+## Description of Data
+The dataset consists of integration problems in JSON format, including:
+
+- **Questions**: The integral to solve.
+- **Solutions**: The correct answer and step-by-step solution.
+- **Metadata**: Problem type, difficulty level, and solution approach.
+
+** Example Entry:**
 ```bash
   [
       {
@@ -30,20 +44,12 @@ The dataset in JSON format, consists of a wide variety of integration problems, 
   ]
 ```
 
-## Uniqueness About This Dataset
-Nowadays, there is no large-scale dataset available in the public domain explicitly focusing on integration problems, although the collection of integration problems in a systematic manner can be an effective way to meet the requirement of problem generation. Current datasets are insufficient for teaching advanced calculus problem generation and do not contain detailed step-by-step problems which is an important component of learning.
-1. Comprehensive Coverage of Integration Techniques: The dataset will incorporate all forms of integration issues with basic, intermediate, and advanced integration issues covered. It includes basic integration, substitution, integration by parts, etc Integration by parts computes the integral with the help of integration of other functions.
-2. Diversity of Functions: The dataset will include integrals of various classes of functions which in fact will include polynomial, trigonometric, logarithmic, exponential, and hyperbolic functions.
-
 ## Power Analysis
 
 
 ## Data Collection Protocol
 1. Textbooks: Stewart’s Calculus, Apostol’s Calculus
 2. Web Scraping from Open-Source Online Platform:![Symbolab](https://www.symbolab.com/), ![Paul’s Online Math](https://tutorial.math.lamar.edu/)
-
-## Open Source Dataset
-The open-source dataset can be found at: ![Roxanne-WANG/Integration_Problem_Set](https://huggingface.co/datasets/Roxanne-WANG/Integration_Problem_Set)
 
 ## Explory Data Analysis
 **1. Category Distribution**
@@ -70,9 +76,49 @@ The open-source dataset can be found at: ![Roxanne-WANG/Integration_Problem_Set]
 **4. Word Cloud Analysis**
 ![Figure_4](https://github.com/user-attachments/assets/43dfa821-22bb-4f16-a435-b5c8230900ab)
   - Common terms in questions include symbols like x, dx, sin, cos, and numerical constants such as 2, 3, and 4.
-  - These terms indicate a heavy focus on single-variable integrals and common trigonometric or polynomial components.
+  - These terms focus heavily on single-variable integrals and common trigonometric or polynomial components.
   - Patterns like tan, ln, and higher powers suggest questions often involve transcendental functions or logarithmic integrations.
   - Graph Summary: A word cloud visualizes the most frequently occurring terms, emphasizing the focus on fundamental and advanced mathematical symbols.
+
+
+## Ethical Statement
+
+The **Integral Problem Set** project supports educational objectives and facilitates advancements in AI-driven learning tools. This ethical statement outlines the principles and considerations guiding the development and use of this dataset.
+
+#### Purpose
+This dataset aims to provide high-quality, diverse, and accurate integration problems for:
+- Educational platforms and applications.
+- Training AI models, including Large Language Models (LLMs), for mathematics education.
+- Assisting students, educators, and researchers in advancing mathematical problem-solving tools.
+
+#### Data Sourcing
+1. **Open and Publicly Available Sources**:
+   - The problems are collected exclusively from publicly available resources, such as free online educational platforms, open-access textbooks, and reliable mathematics tools like Symbolab, Paul's Online Math Notes, and Wolfram Alpha.
+
+2. **No Proprietary Content**:
+   - The dataset does not include proprietary, copyrighted, or restricted materials. All content is sourced in compliance with terms of service of the platforms used for collection.
+
+3. **Transparent Collection**:
+   - The methods and tools for data collection (e.g., web scraping scripts) are openly documented and included in the project repository, ensuring reproducibility and transparency.
+
+#### **Use of the Dataset**
+1. **Encouraging Ethical Applications**:
+   - The dataset is intended for educational, research, and academic purposes. Potential applications include training AI models for educational platforms, automating problem generation, and building interactive math tutoring systems.
+
+2. **Preventing Misuse**:
+   - The dataset should not be used for unethical purposes, such as:
+     - Academic dishonesty (e.g., cheating in exams or assignments).
+     - Developing systems that infringe on intellectual property rights.
+
+3. **Accessibility**:
+   - The dataset is open-source under the MIT License, ensuring accessibility to educators, students, and researchers while requiring proper attribution.
+
+#### Commitment to Responsible AI
+This project aligns with the principles of responsible AI development:
+- **Transparency**: All data collection methods, tools, and validation techniques are openly shared.
+- **Fairness**: The dataset is diverse and balanced, catering to learners of varying skill levels.
+- **Accountability**: The project contributors are committed to addressing ethical concerns and improving the dataset through community feedback.
+
 
 ## License
 This dataset is licensed under the [MIT License](https://opensource.org/licenses/MIT).
