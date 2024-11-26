@@ -24,9 +24,9 @@ Nowadays, there is no large-scale dataset available in the public domain explici
 ## Description of Data
 The dataset consists of integration problems in JSON format, including:
 
-- **Questions**: The integral to solve.
-- **Solutions**: The correct answer and step-by-step solution.
-- **Metadata**: Problem type, difficulty level, and solution approach.
+- **difficulty**: The difficulty level of the question, the labels include: "Basic", "Moderate", and "Advanced".
+- **category**: The category of the question which involves "Trigonometric Substitution", "Constant Rule", "Multiple Integrals", "Integration by Parts", "Power Rule", and "Partial Fractions".
+- **question**: The content of the integration question.
 
 **Example Entry:**
 ```bash
